@@ -1,6 +1,16 @@
 name: Testing Skills
 on:
-  workflow_dispatch:
+  workflow_dispatch: null
+  workflow_inputs:
+    inputs:
+      environment:
+        description: Deployment to environemnt
+        require: true
+        type: choice
+        option:
+          - dev
+          - prod
+          - qa
 jobs:
   build:
     runs-on: ubuntu-latest
