@@ -1,0 +1,11 @@
+name: Testing Skills
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: testing
+        uses: actions/checkout@v6
+      - name: Print
+        run: echo "welcome to Hello World"
