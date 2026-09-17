@@ -1,13 +1,12 @@
 name: Testing Skills
 on:
-  workflow_dispatch: null
-  workflow_inputs:
+  workflow_dispatch:
     inputs:
       environment:
         description: Deployment to environemnt
-        require: true
+        required: true
         type: choice
-        option:
+        options:
           - dev
           - prod
           - qa
