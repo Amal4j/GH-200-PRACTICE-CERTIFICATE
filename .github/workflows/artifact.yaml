@@ -30,6 +30,8 @@ jobs:
             -p 5000:5000 \
             --name amal-new-container \
             app:v1.0.0
+          docker tag amal-new-container: latest amaljyoti998/amal-new-container:latest
+          docker push amal4j/amal-new-container:latest
 
       - name: Generate Smoke Test Report
         run: |
