@@ -39,7 +39,7 @@ jobs:
 
       - name: Export Container Logs
         run: |
-          docker logs cwvj-flask-container > container-logs.txt
+          docker logs amal-new-container > container-logs.txt
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v7
