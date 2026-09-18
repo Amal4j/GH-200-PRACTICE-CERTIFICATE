@@ -11,6 +11,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v6
 
+      - name: chk ws
+        run: |
+          pwd
+          ls -la
+          find . -maxdepth 3 type f
+
       - name: Build Docker Image
         uses: docker/build-push-action@v7
         with:
