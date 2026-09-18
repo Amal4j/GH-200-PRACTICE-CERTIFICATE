@@ -17,7 +17,7 @@ jobs:
           ls -la
           find . -maxdepth 3 type f
 
-      - name: Build Docker Image
+      - name: Build Docker Images
         uses: docker/build-push-action@v7
         with:
           context: ./project-files
