@@ -28,8 +28,8 @@ jobs:
         run: |
           docker run -d \
             -p 5000:5000 \
-            --name cwvj-flask-container \
-            cwvj-flask-app:v1.0.1
+            --name amal-new-container \
+            app:v1.0.1
 
       - name: Generate Smoke Test Report
         run: |
